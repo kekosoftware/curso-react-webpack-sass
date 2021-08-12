@@ -1,12 +1,18 @@
 import './App.scss'
+import React, { Fragment } from 'react';
+import Header from "./components/Headear";
+import Characters from './components/Characters';
+import './components/Header.css'
 
-function App() {
-    return (
-        <div className='app'>
-            <h1>React + Webpack + SASS</h1>
-            <p>La mejor web del mundo con React y Webpack</p>
-        </div>
-    )
+const App = () => {
+  return ( 
+    <Fragment>
+      <Header 
+        title="Rick and Morty"
+      />
+      <Characters />
+    </Fragment>
+   );
 }
-
-export default App
+ 
+export default App;
